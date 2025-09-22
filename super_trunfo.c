@@ -2,7 +2,7 @@
 
 int main()
 {
-  char Nome, Estado;
+  char Estado;
   char CodigoDaCarta[20];
   char NomeDaCidade[50];
 
@@ -32,41 +32,41 @@ int main()
   printf("A quantidade de pontos turisticos da sua cidade: \n");
   scanf("%i", &NumeroDePontosTuristicos);
 
-  printf("-Estado: %c \n-CodigoDaCarta: %s \n-NomeDaCidade: %s \n-População: %i \n", Estado, CodigoDaCarta, NomeDaCidade, Populacao);
+  printf("-Estado: %c \n-CodigoDaCarta: %s \n-NomeDaCidade: %s \n-População: %d\n", Estado, CodigoDaCarta, NomeDaCidade, Populacao);
   printf("-Area: %f \n-PIB: %f \n-NúmeroDePontosTurísticos: %i \n", Area, PIB, NumeroDePontosTuristicos);
 
-  int main();
-  {
-    char carta2, estado;
-    char codigodacarta[30];
-    char nomedacidade[40];
+  char NomeDoEstado;
+  char Codigo[30];
+  char Cidade[40];
 
-    int populacao, numerodepontosturisticos;
-    float area, pib;
+  int Habitantes, Turismo;
+  float AreaDaCidade, PibDacidade;
 
-    printf("Carta2 /n");
+  printf("Carta2 \n");
 
-    printf("Uma letra de 'A' a 'H'(Que represente seu estado:/n)");
-    scanf("%c", &estado);
+  printf(" - Digite uma letra de 'A' a 'H' que represente seu estado: \n");
+  scanf(" %c", &NomeDoEstado);
 
-    printf("A letra do seu estado seguida de número de 01 a 04(Ex: A02, B03)/n");
-    scanf("%s", codigodacarta);
+  printf(" - A letra do seu estado seguida de número de 01 a 04(Ex: A02, B03): \n");
+  scanf(" %s", Codigo);
 
-    printf("Digite o nome da sua cidade:/n");
-    scanf("%s", nomedacidade);
+  printf(" - Digite o nome da sua cidade: \n");
+  scanf("%s", Cidade);
 
-    printf("Número de habitantes da sua cidade:/n");
-    scanf("%d", &populacao);
+  printf(" - Número de habitantes da sua cidade: \n");
+  scanf("%d", &Habitantes);
 
-    printf("A quantidade de pontos turisticos da sua cidade:/n");
-    scanf("%i", &numerodepontosturisticos);
+  printf("- A quantidade de pontos turisticos da sua cidade: \n");
+  scanf("%i", &Turismo);
 
-    printf("A área da sua cidade em quilomêtros quadrados:/n");
-    scanf("%f", &area);
+  printf(" - A área da sua cidade em quilomêtros quadrados: \n");
+  scanf("%f", &AreaDaCidade);
 
-    printf("O produto interno Bruto da cidade: /n");
-    scanf("%f", &pib);
-  }
+  printf(" - O produto interno Bruto da cidade: \n");
+  scanf("%f", &PibDacidade);
+
+  printf("-estado: %c \n-codigodacarta: %s \n-nomedacidade %s \n-populacao: %d \n", NomeDoEstado, Codigo, Cidade, Habitantes);
+  printf("-numerodepontosturisticos: %i \n-area: %f \n-pib: %f \n", Turismo, AreaDaCidade, PibDacidade);
 
   return 0;
 }
